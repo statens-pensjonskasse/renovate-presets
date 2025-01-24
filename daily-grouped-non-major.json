@@ -1,0 +1,6 @@
+{
+  "extends": [
+    "local>appark/renovate-presets-internal:grouped-non-major",
+    "schedule:daily"
+  ]
+}

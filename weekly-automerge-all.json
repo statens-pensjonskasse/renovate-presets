@@ -1,0 +1,6 @@
+{
+  "extends": [
+    "local>appark/renovate-presets-internal:automerge-all",
+    "schedule:weekly"
+  ]
+}

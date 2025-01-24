@@ -1,0 +1,21 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":disableRateLimiting",
+    "docker:enableMajor"
+  ],
+  "timezone": "Europe/Oslo",
+  "packageRules": [
+    {
+      "groupName": "all dependencies",
+      "groupSlug": "all-dependencies",
+      "matchPackagePatterns": ["*"],
+      "automerge": true,
+      "automergeType": "branch",
+      "automergeSchedule": [
+        "Before 10am every weekday"
+      ]
+    }
+  ]
+}
