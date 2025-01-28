@@ -8,6 +8,9 @@
   "timezone": "Europe/Oslo",
   "packageRules": [
     {
+      "matchPackageNames": [
+        "*"
+      ],
       "groupName": "all non-major dependencies",
       "groupSlug": "all-non-major",
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
