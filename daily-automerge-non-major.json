@@ -1,6 +1,6 @@
 {
   "extends": [
-    "local>appark/renovate-presets-internal:automerge-non-major",
+    "local>statens-pensjonskasse/renovate-presets-internal:automerge-non-major",
     "schedule:daily"
   ]
 }

@@ -1,6 +1,6 @@
 {
   "extends": [
-    "local>appark/renovate-presets-internal:grouped-non-major",
+    "local>statens-pensjonskasse/renovate-presets-internal:grouped-non-major",
     "schedule:weekly"
   ]
 }

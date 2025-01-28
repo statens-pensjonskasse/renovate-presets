@@ -1,0 +1,27 @@
+name: Validate Renovate Presets
+
+on:
+  push:
+    branches: [ 'main' ]
+  pull_request:
+    branches: [ 'main' ]
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    env:
+      TZ: 'Europe/Oslo'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 #v4.2.2
+        with:
+          fetch-depth: 0
+
+      - name: Validate preset files
+        run: |
+          find . -type f \( -iname \*.json -o -iname \*.json5 \) \
+            | xargs -I {} docker run --rm -v "${{ github.workspace }}:/github/workspace" renovate/renovate:slim renovate-config-validator /github/workspace/{}
