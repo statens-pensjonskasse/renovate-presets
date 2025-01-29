@@ -8,9 +8,11 @@
   "timezone": "Europe/Oslo",
   "packageRules": [
     {
+      "matchPackageNames": [
+        "*"
+      ],
       "groupName": "all dependencies",
       "groupSlug": "all-dependencies",
-      "matchPackagePatterns": ["*"],
       "automerge": true,
       "automergeType": "branch",
       "automergeSchedule": [
