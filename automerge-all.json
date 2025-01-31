@@ -14,10 +14,7 @@
       "groupName": "all dependencies",
       "groupSlug": "all-dependencies",
       "automerge": true,
-      "automergeType": "branch",
-      "automergeSchedule": [
-        "Before 10am every weekday"
-      ]
+      "automergeType": "branch"
     }
   ]
 }

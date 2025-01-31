@@ -1,6 +1,8 @@
 {
   "extends": [
-    "local>statens-pensjonskasse/renovate-presets-internal:grouped-non-major",
-    "schedule:daily"
+    "local>statens-pensjonskasse/renovate-presets-internal:grouped-non-major"
+  ],
+  "schedule": [
+    "Before 6am every weekday"
   ]
 }
