@@ -1,6 +1,11 @@
 {
   "extends": [
-    "local>statens-pensjonskasse/renovate-presets-internal:automerge-all",
-    "schedule:weekly"
+    "local>statens-pensjonskasse/renovate-presets-internal:automerge-all"
+  ],
+  "schedule": [
+    "Before 6am on Monday"
+  ],
+  "automergeSchedule": [
+    "Before 6am on Monday"
   ]
 }
