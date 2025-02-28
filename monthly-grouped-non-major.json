@@ -3,6 +3,6 @@
     "local>statens-pensjonskasse/renovate-presets-internal:grouped-non-major"
   ],
   "schedule": [
-    "Before 6am on the first day of the month"
+    "On the first day of the month"
   ]
 }
