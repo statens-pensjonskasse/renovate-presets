@@ -3,7 +3,7 @@
     "local>statens-pensjonskasse/renovate-presets-internal:automerge-non-major"
   ],
   "schedule": [
-    "Before 11am every weekday"
+    "Every weekday"
   ],
   "automergeSchedule": [
     "Before 11am every weekday"

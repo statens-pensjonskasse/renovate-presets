@@ -3,9 +3,9 @@
     "local>statens-pensjonskasse/renovate-presets-internal:automerge-non-major"
   ],
   "schedule": [
-    "Before 11am on the first day of the month"
+    "On the first day of the month"
   ],
   "automergeSchedule": [
-    "Before 11am on the first day of the month"
+    "Before 8am on the first day of the month"
   ]
 }

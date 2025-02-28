@@ -3,7 +3,7 @@
     "local>statens-pensjonskasse/renovate-presets-internal:automerge-all"
   ],
   "schedule": [
-    "Before 11am on Monday"
+    "On Monday"
   ],
   "automergeSchedule": [
     "Before 11am on Monday"
