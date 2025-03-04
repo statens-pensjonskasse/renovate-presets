@@ -6,6 +6,7 @@
     "docker:enableMajor"
   ],
   "timezone": "Europe/Oslo",
+  "rangeStrategy": "bump",
   "packageRules": [
     {
       "matchPackageNames": [
@@ -15,7 +16,7 @@
       "groupSlug": "all-non-major",
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": true,
-      "automergeType": "branch"
+      "automergeType": "pr"
     }
   ]
 }

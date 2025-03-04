@@ -6,6 +6,6 @@
     "On Monday"
   ],
   "automergeSchedule": [
-    "Before 8am on Monday"
+    "Every weekday"
   ]
 }

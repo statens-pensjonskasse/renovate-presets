@@ -6,6 +6,7 @@
     "docker:enableMajor"
   ],
   "timezone": "Europe/Oslo",
+  "rangeStrategy": "bump",
   "packageRules": [
     {
       "matchPackageNames": [
