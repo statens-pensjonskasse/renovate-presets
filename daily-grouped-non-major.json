@@ -3,6 +3,6 @@
     "local>statens-pensjonskasse/renovate-presets-internal:grouped-non-major"
   ],
   "schedule": [
-    "Every weekday"
+    "Before 5am every weekday"
   ]
 }

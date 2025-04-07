@@ -3,6 +3,6 @@
     "local>statens-pensjonskasse/renovate-presets-internal:grouped-non-major"
   ],
   "schedule": [
-    "On Monday"
+    "Before 5am on Monday"
   ]
 }

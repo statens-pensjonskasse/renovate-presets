@@ -5,7 +5,7 @@
     ":disableRateLimiting",
     "docker:enableMajor"
   ],
-  "timezone": "Europe/Oslo",
+  "timezone": "UTC",
   "rangeStrategy": "bump",
   "packageRules": [
     {
