@@ -1,0 +1,12 @@
+{
+  "packageRules": [
+    {
+      "matchPackageNames": "statens-pensjonskasse/github-actions-library",
+      "commitMessageSuffix": "[skip publish]",
+      "groupName": "",
+      "groupSlug": "",
+      "automerge": true,
+      "automergeType": "branch"
+    }
+  ]
+}
