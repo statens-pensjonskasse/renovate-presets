@@ -7,6 +7,7 @@
   ],
   "timezone": "UTC",
   "rangeStrategy": "bump",
+  "npmrc": "@statens-pensjonskasse:registry=https://npm.pkg.github.com/",
   "packageRules": [
     {
       "matchPackageNames": [
