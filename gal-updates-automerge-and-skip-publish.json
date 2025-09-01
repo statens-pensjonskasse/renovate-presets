@@ -3,8 +3,8 @@
     {
       "matchPackageNames": "statens-pensjonskasse/github-actions-library",
       "commitMessageSuffix": "[skip publish]",
-      "groupName": "",
-      "groupSlug": "",
+      "groupName": "GAL update with skip publish",
+      "groupSlug": "gal-update-skip-publish",
       "automerge": true,
       "automergeType": "branch"
     }
