@@ -15,7 +15,7 @@
         "{{arg9}}"
       ],
       "matchStrings": [
-        "(?<currentValue>[\\w+\\.\\-]*(@(?<currentDigest>sha256:\\w{64}))?)['\",;]*\\s*(#|\\\/\\\/)\\s?renovate: (?<datasource>\\S+)=(?<depName>\\S+)\\s?(registry=(?<registryUrl>\\S+))?\\s?(versioning=(?<versioning>\\S+))?"
+        "(?<currentValue>[\\w+\\.\\-]*(@(?<currentDigest>sha256:\\w{64}))?)['\",;]*\\s*(#|\\\/\\\/)\\s?renovate: (?<datasource>\\S+)=(?<depName>\\S+)\\s?(registry=(?<registryUrl>\\S+))?\\s?(versioning=(?<versioning>\\S+))?\\s?(extractVersion=(?<extractVersion>\\S+))?"
       ]
     }
   ]
