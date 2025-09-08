@@ -3,8 +3,7 @@
   "extends": [
     "config:recommended",
     ":disableRateLimiting",
-    "docker:enableMajor",
-    "local>statens-pensjonskasse/renovate-presets-internal:gal-updates-automerge-and-skip-publish"
+    "docker:enableMajor"
   ],
   "timezone": "UTC",
   "rangeStrategy": "bump",
