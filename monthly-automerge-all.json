@@ -1,11 +1,12 @@
 {
   "extends": [
-    "local>statens-pensjonskasse/renovate-presets-internal:automerge-all"
+    "local>statens-pensjonskasse/renovate-presets-internal:automerge-all",
+    "local>statens-pensjonskasse/renovate-presets-internal:gal-updates-automerge-and-skip-publish"
   ],
   "schedule": [
-    "Before 5am on the first day of the month"
+    "Before 8am on the first day of the month"
   ],
   "automergeSchedule": [
-    "Before 5am on the first day of the month"
+    "Before 8am on the first day of the month"
   ]
 }

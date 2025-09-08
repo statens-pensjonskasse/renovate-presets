@@ -1,8 +1,9 @@
 {
   "extends": [
-    "local>statens-pensjonskasse/renovate-presets-internal:grouped-non-major"
+    "local>statens-pensjonskasse/renovate-presets-internal:grouped-non-major",
+    "local>statens-pensjonskasse/renovate-presets-internal:gal-updates-automerge-and-skip-publish"
   ],
   "schedule": [
-    "Before 5am on Monday"
+    "Before 8am on Monday"
   ]
 }
