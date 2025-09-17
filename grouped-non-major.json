@@ -17,6 +17,11 @@
       "groupSlug": "all-non-major",
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": false
+    },
+    {
+      "matchDatasources": ["npm", "maven"],
+      "excludePackagePatterns": ["^no\\.spk\\.", "^@statens-pensjonskasse/"],
+      "minimumReleaseAge": "3 days"
     }
   ]
 }
