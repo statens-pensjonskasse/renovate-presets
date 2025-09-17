@@ -17,6 +17,10 @@
       "groupSlug": "all-non-major",
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": false
+    },
+    {
+      "matchDatasources": ["npm"],
+      "minimumReleaseAge": "3 days"
     }
   ]
 }
