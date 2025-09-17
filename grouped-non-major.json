@@ -19,7 +19,8 @@
       "automerge": false
     },
     {
-      "matchDatasources": ["npm"],
+      "matchDatasources": ["npm", "maven"],
+      "excludePackagePatterns": ["^no\\.spk\\.", "^@statens-pensjonskasse/"],
       "minimumReleaseAge": "3 days"
     }
   ]
