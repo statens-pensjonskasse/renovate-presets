@@ -7,7 +7,7 @@ To use Renovate in you project choose the preset you want, and add a `.github/re
 ```json
 {
   "extends": [
-    "local>statens-pensjonskasse/renovate-presets-internal:daily-automerge-non-major"
+    "local>statens-pensjonskasse/renovate-presets:daily-automerge-non-major"
   ]
 }
 ```
@@ -21,8 +21,8 @@ For Spring-Boot java APIs we recommend only renovating patch versions of spring-
 ```json
 {
   "extends": [
-    "local>statens-pensjonskasse/renovate-presets-internal:daily-automerge-non-major",
-    "local>statens-pensjonskasse/renovate-presets-internal:spring-boot-patch-updates-only.json"
+    "local>statens-pensjonskasse/renovate-presets:daily-automerge-non-major",
+    "local>statens-pensjonskasse/renovate-presets:spring-boot-patch-updates-only.json"
   ]
 }
 ```
@@ -33,8 +33,8 @@ For other types of dependencies like github releases or helm charts you can use 
 ```
 {
   "extends": [
-    "local>statens-pensjonskasse/renovate-presets-internal:daily-automerge-non-major",
-    "local>statens-pensjonskasse/renovate-presets-internal:renovate-comments(\\.yaml$,(\\.yml$))"
+    "local>statens-pensjonskasse/renovate-presets:daily-automerge-non-major",
+    "local>statens-pensjonskasse/renovate-presets:renovate-comments(\\.yaml$,(\\.yml$))"
   ]
 }
 ```
