@@ -1,8 +1,10 @@
-# Configuration files for Renovate for internal use
+# Renovate Configuration files for Statens Pensjonskasses projects
 
 See https://docs.renovatebot.com/config-presets/
 
-To use Renovate in you project choose the preset you want, and add a `.github/renovate.json` similar to this:
+To use our Renovate presets in your project: 
+1. Choose the preset that fits your project from this repository
+2. Add a `.github/renovate.json` similar to this:
 
 ```json
 {
@@ -12,7 +14,7 @@ To use Renovate in you project choose the preset you want, and add a `.github/re
 }
 ```
 
-This will import the configuration for daily automerge of updates that are not major.
+This examples imports the configuration for daily automerge of updates that are not major.
 
 ## Spring-Boot Java APIs
 For Spring-Boot java APIs we recommend only renovating patch versions of spring-boot by including the `spring-boot-patch-updates-only` preset:
