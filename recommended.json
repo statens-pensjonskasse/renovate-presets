@@ -1,0 +1,20 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    "docker:enableMajor",
+    "helpers:pinGitHubActionDigests",
+    ":configMigration",
+    ":disableRateLimiting"
+  ],
+  "timezone": "UTC",
+  "rangeStrategy": "bump",
+  "npmrc": "@statens-pensjonskasse:registry=https://npm.pkg.github.com/",
+  "packageRules": [
+    {
+      "matchDatasources": ["npm", "maven"],
+      "excludePackagePatterns": ["^no\\.spk\\.", "^@statens-pensjonskasse/"],
+      "minimumReleaseAge": "3 days"
+    }
+  ]
+}

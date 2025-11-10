@@ -1,4 +1,4 @@
-# Renovate Configuration files for Statens Pensjonskasses projects
+# Renovate Configuration files for Statens Pensjonskasse's projects
 
 See https://docs.renovatebot.com/config-presets/
 
@@ -9,12 +9,12 @@ To use our Renovate presets in your project:
 ```json
 {
   "extends": [
-    "local>statens-pensjonskasse/renovate-presets:daily-automerge-non-major"
+    "github>statens-pensjonskasse/renovate-presets:daily-automerge-non-major"
   ]
 }
 ```
 
-This examples imports the configuration for daily automerge of updates that are not major.
+This example imports the configuration for daily automerge of updates that are not major.
 
 ## Spring-Boot Java APIs
 For Spring-Boot java APIs we recommend only renovating patch versions of spring-boot by including the `spring-boot-patch-updates-only` preset:
@@ -23,8 +23,8 @@ For Spring-Boot java APIs we recommend only renovating patch versions of spring-
 ```json
 {
   "extends": [
-    "local>statens-pensjonskasse/renovate-presets:daily-automerge-non-major",
-    "local>statens-pensjonskasse/renovate-presets:spring-boot-patch-updates-only.json"
+    "github>statens-pensjonskasse/renovate-presets:daily-automerge-non-major",
+    "github>statens-pensjonskasse/renovate-presets:spring-boot-patch-updates-only.json"
   ]
 }
 ```
@@ -35,8 +35,8 @@ For other types of dependencies like github releases or helm charts you can use 
 ```json
 {
   "extends": [
-    "local>statens-pensjonskasse/renovate-presets:daily-automerge-non-major",
-    "local>statens-pensjonskasse/renovate-presets:renovate-comments(\\.yaml$,(\\.yml$))"
+    "github>statens-pensjonskasse/renovate-presets:daily-automerge-non-major",
+    "github>statens-pensjonskasse/renovate-presets:renovate-comments(\\.yaml$,(\\.yml$))"
   ]
 }
 ```
