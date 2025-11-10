@@ -2,8 +2,10 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended",
-    ":disableRateLimiting",
-    "docker:enableMajor"
+    "docker:enableMajor",
+    "helpers:pinGitHubActionDigests",
+    ":configMigration",
+    ":disableRateLimiting"
   ],
   "timezone": "UTC",
   "rangeStrategy": "bump",

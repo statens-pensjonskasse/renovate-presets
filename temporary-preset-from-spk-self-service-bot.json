@@ -2,5 +2,8 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended"
-  ]
+  ],
+  "timezone": "UTC",
+  "rangeStrategy": "bump",
+  "npmrc": "@statens-pensjonskasse:registry=https://npm.pkg.github.com/"
 }

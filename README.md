@@ -30,7 +30,7 @@ For Spring-Boot java APIs we recommend only renovating patch versions of spring-
 ## Renovate Comments
 For other types of dependencies like github releases or helm charts you can use the `renovate-comments` preset by specifying the file extensions you want to scan for dependencies as follows
 
-```
+```json
 {
   "extends": [
     "local>statens-pensjonskasse/renovate-presets:daily-automerge-non-major",
