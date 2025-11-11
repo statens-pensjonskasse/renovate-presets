@@ -1,5 +1,5 @@
 {
   "extends": [
-    "local>statens-pensjonskasse/renovate-presets:daily-automerge-all"
+    "github>statens-pensjonskasse/renovate-presets:daily-automerge-all"
   ]
 }

@@ -1,7 +1,7 @@
 {
   "extends": [
-    "local>statens-pensjonskasse/renovate-presets:automerge-all",
-    "local>statens-pensjonskasse/renovate-presets:gal-updates-automerge-and-skip-publish"
+    "github>statens-pensjonskasse/renovate-presets:automerge-all",
+    "github>statens-pensjonskasse/renovate-presets:gal-updates-automerge-and-skip-publish"
   ],
   "schedule": [
     "Before 5am every weekday"

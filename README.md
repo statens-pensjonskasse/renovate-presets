@@ -1,18 +1,20 @@
-# Configuration files for Renovate for internal use
+# Renovate Configuration files for Statens Pensjonskasse's projects
 
 See https://docs.renovatebot.com/config-presets/
 
-To use Renovate in you project choose the preset you want, and add a `.github/renovate.json` similar to this:
+To use our Renovate presets in your project: 
+1. Choose the preset that fits your project from this repository
+2. Add a `.github/renovate.json` similar to this:
 
 ```json
 {
   "extends": [
-    "local>statens-pensjonskasse/renovate-presets:daily-automerge-non-major"
+    "github>statens-pensjonskasse/renovate-presets:daily-automerge-non-major"
   ]
 }
 ```
 
-This will import the configuration for daily automerge of updates that are not major.
+This example imports the configuration for daily automerge of updates that are not major.
 
 ## Spring-Boot Java APIs
 For Spring-Boot java APIs we recommend only renovating patch versions of spring-boot by including the `spring-boot-patch-updates-only` preset:
@@ -21,8 +23,8 @@ For Spring-Boot java APIs we recommend only renovating patch versions of spring-
 ```json
 {
   "extends": [
-    "local>statens-pensjonskasse/renovate-presets:daily-automerge-non-major",
-    "local>statens-pensjonskasse/renovate-presets:spring-boot-patch-updates-only.json"
+    "github>statens-pensjonskasse/renovate-presets:daily-automerge-non-major",
+    "github>statens-pensjonskasse/renovate-presets:spring-boot-patch-updates-only.json"
   ]
 }
 ```
@@ -30,11 +32,11 @@ For Spring-Boot java APIs we recommend only renovating patch versions of spring-
 ## Renovate Comments
 For other types of dependencies like github releases or helm charts you can use the `renovate-comments` preset by specifying the file extensions you want to scan for dependencies as follows
 
-```
+```json
 {
   "extends": [
-    "local>statens-pensjonskasse/renovate-presets:daily-automerge-non-major",
-    "local>statens-pensjonskasse/renovate-presets:renovate-comments(\\.yaml$,(\\.yml$))"
+    "github>statens-pensjonskasse/renovate-presets:daily-automerge-non-major",
+    "github>statens-pensjonskasse/renovate-presets:renovate-comments(\\.yaml$,(\\.yml$))"
   ]
 }
 ```
