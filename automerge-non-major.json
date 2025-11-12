@@ -5,12 +5,18 @@
   ],
   "packageRules": [
     {
-      "matchPackageNames": [
-        "*"
-      ],
       "groupName": "all non-major dependencies",
       "groupSlug": "all-non-major",
+      "matchPackageNames": ["*"],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true,
+      "automergeType": "branch"
+    },
+    {
+      "groupName": "all dev & test dependencies",
+      "matchPackageNames": ["*"],
+      "matchDepTypes": ["devDependencies", "test"],
+      "commitMessageSuffix": "[skip publish]",
       "automerge": true,
       "automergeType": "branch"
     }
