@@ -11,9 +11,9 @@
       "automergeType": "branch"
     },
     {
-      "groupName": "all dev & test dependencies",
+      "groupName": "all test dependencies",
       "matchPackageNames": ["*"],
-      "matchDepTypes": ["devDependencies", "test"],
+      "matchDepTypes": ["test"],
       "commitMessageSuffix": "[skip publish]",
       "automerge": true,
       "automergeType": "branch"
