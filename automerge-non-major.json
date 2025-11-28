@@ -16,6 +16,7 @@
       "groupName": "all test dependencies",
       "matchPackageNames": ["*"],
       "matchDepTypes": ["test"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "commitMessageSuffix": "[skip publish]",
       "automerge": true,
       "automergeType": "branch"
