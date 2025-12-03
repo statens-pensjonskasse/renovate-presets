@@ -13,7 +13,7 @@
       "automergeType": "branch"
     },
     {
-      "groupName": "all test dependencies",
+      "groupName": "all non-major test dependencies",
       "matchPackageNames": ["*"],
       "matchDepTypes": ["test"],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
