@@ -12,12 +12,12 @@
       "automerge": false
     },
     {
-      "groupName": "all test dependencies",
+      "groupName": "all non-major test dependencies",
       "matchPackageNames": ["*"],
       "matchDepTypes": ["test"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "commitMessageSuffix": "[skip publish]",
-      "automerge": true,
-      "automergeType": "branch"
+      "automerge": false,
     }
   ]
 }
