@@ -1,0 +1,33 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended", ":disableRateLimiting"],
+  "timezone": "Europe/Oslo",
+  "schedule": ["Before 4am on Sunday"],
+  "rebaseWhen": "behind-base-branch",
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["panda"],
+      "groupName": "Panda non-major avhengigheter",
+      "groupSlug": "alle-panda-mindre-saker",
+      "matchUpdateTypes": ["minor", "patch"]
+    },
+    {
+      "matchDepTypes": ["test"],
+      "groupName": "Alle test avhengigheter",
+      "groupSlug": "alle-test",
+      "automerge": true,
+      "automergeType": "branch",
+      "automergeSchedule": ["Before 4am on Sunday"]
+    },
+    {
+      "groupName": "alle eksterne non-major dependencies",
+      "groupSlug": "alle-eksterne-minor-patch",
+      "matchPackagePatterns": ["*"],
+      "excludePackagePatterns": ["panda"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true,
+      "automergeType": "branch",
+      "automergeSchedule": ["Before 4am on Sunday"]
+    }
+  ]
+}
