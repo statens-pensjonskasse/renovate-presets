@@ -1,0 +1,23 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "org.jetbrains.kotlin:kotlin-reflect",
+        "org.jetbrains.kotlin:kotlin-stdlib",
+        "org.jetbrains.kotlin:kotlin-stdlib-jdk8",
+        "org.jetbrains.kotlin:kotlin-maven-plugin"
+      ],
+      "allowedVersions": "<2.3"
+    },
+    {
+      "matchPackageNames": [
+        "org.springframework.boot:spring-boot-starter-parent",
+        "spring-boot-starter-data-jpa",
+        "org.springframework.boot:spring-boot-dependencies"
+      ],
+      "allowedVersions": "<4.0"
+    }
+  ]
+
+}
