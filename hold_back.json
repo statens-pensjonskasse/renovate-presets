@@ -13,6 +13,13 @@
         "org.springframework.boot:spring-boot-dependencies"
       ],
       "allowedVersions": "<4.0"
+    },
+    {
+      "matchPackageNames": [
+        "org.springdoc:springdoc-openapi-starter-webmvc-ui",
+        "org.springdoc:springdoc-openapi-starter-common"
+      ],
+      "allowedVersions": "<3.0"
     }
   ]
 
