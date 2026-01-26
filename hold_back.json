@@ -13,6 +13,11 @@
         "org.springframework.boot:spring-boot-dependencies"
       ],
       "allowedVersions": "<4.0"
+    },
+    {
+      "matchManagers": ["maven"],
+      "matchPackagePatterns": ["^org\\.springdoc:.*$"],
+      "allowedVersions": "<3.0"
     }
   ]
 
