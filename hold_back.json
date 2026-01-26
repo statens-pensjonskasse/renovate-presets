@@ -15,10 +15,8 @@
       "allowedVersions": "<4.0"
     },
     {
-      "matchPackageNames": [
-        "org.springdoc:springdoc-openapi-starter-webmvc-ui",
-        "org.springdoc:springdoc-openapi-starter-common"
-      ],
+      "matchManagers": ["maven"],
+      "matchPackagePatterns": ["^org\\.springdoc:.*$"],
       "allowedVersions": "<3.0"
     }
   ]
