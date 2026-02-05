@@ -19,6 +19,11 @@
       "matchManagers": ["maven"],
       "matchPackagePatterns": ["^org\\.springdoc:.*$"],
       "allowedVersions": "<3.0"
+    },
+    {
+      "matchManagers": ["maven"],
+      "matchPackagePatterns": ["com.ninja-squad:springmockk"],
+      "allowedVersions": "<5.0"
     }
   ]
 
