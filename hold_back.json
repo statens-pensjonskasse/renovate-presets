@@ -4,7 +4,7 @@
     {
       "matchManagers": ["maven"],
       "matchPackagePatterns": ["^org\\.jetbrains\\.kotlin:.*$"],
-      "allowedVersions": "<2.3"
+      "allowedVersions": "<2.3.10"
     },
     {
       "matchPackageNames": [
