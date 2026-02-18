@@ -7,6 +7,14 @@
       "groupSlug": "gal-update-skip-publish",
       "automerge": true,
       "automergeType": "branch"
+    },
+    {
+      "matchPackageNames": "statens-pensjonskasse/gha-adhoc-deploy",
+      "commitMessageSuffix": "[skip publish]",
+      "groupName": "gha-adhoc-deploy update with skip publish",
+      "groupSlug": "gha-update-skip-publish",
+      "automerge": true,
+      "automergeType": "branch"
     }
   ]
 }
