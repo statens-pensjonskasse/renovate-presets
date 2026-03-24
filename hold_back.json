@@ -2,11 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "matchManagers": ["maven"],
-      "matchPackagePatterns": ["^org\\.jetbrains\\.kotlin:.*$"],
-      "allowedVersions": "<2.3.10"
-    },
-    {
       "matchPackageNames": [
         "org.springframework.boot:spring-boot-starter-parent",
         "spring-boot-starter-data-jpa",
