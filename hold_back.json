@@ -7,23 +7,19 @@
       "allowedVersions": "<=2.3.20"
     },
     {
-      "matchPackageNames": [
-        "org.springframework.boot:spring-boot-starter-parent",
-        "spring-boot-starter-data-jpa",
-        "org.springframework.boot:spring-boot-dependencies",
-        "org.springframework.boot:spring-boot-maven-plugin"
-      ],
-      "allowedVersions": "<4.0"
+      "matchManagers": ["maven"],
+      "matchPackagePatterns": ["^org\\.springframework\\.boot:.*$"],
+      "allowedVersions": "<5.0"
     },
     {
       "matchManagers": ["maven"],
       "matchPackagePatterns": ["^org\\.springdoc:.*$"],
-      "allowedVersions": "<3.0"
+      "allowedVersions": "<4.0"
     },
     {
       "matchManagers": ["maven"],
       "matchPackagePatterns": ["com.ninja-squad:springmockk"],
-      "allowedVersions": "<5.0"
+      "allowedVersions": "<6.0"
     }
   ]
 
