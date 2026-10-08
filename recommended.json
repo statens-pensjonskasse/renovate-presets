@@ -5,7 +5,8 @@
     "docker:enableMajor",
     "helpers:pinGitHubActionDigests",
     ":configMigration",
-    ":disableRateLimiting"
+    ":disableRateLimiting",
+    "github>statens-pensjonskasse/renovate-presets:github-runner-tag"
   ],
   "timezone": "UTC",
   "rangeStrategy": "bump",
@@ -13,7 +14,7 @@
   "packageRules": [
     {
       "matchDatasources": ["npm", "maven"],
-      "excludePackagePatterns": ["^no\\.spk\\.", "^@statens-pensjonskasse/"],
+      "matchPackageNames": ["!/^no\\.spk\\./", "!/^@statens-pensjonskasse//"],
       "minimumReleaseAge": "3 days"
     }
   ]

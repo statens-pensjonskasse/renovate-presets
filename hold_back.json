@@ -3,22 +3,22 @@
   "packageRules": [
     {
       "matchManagers": ["maven"],
-      "matchPackagePatterns": ["^org\\.jetbrains\\.kotlin:.*$"],
+      "matchPackageNames": ["/^org\\.jetbrains\\.kotlin:.*$/"],
       "allowedVersions": "<=2.3.21"
     },
     {
       "matchManagers": ["maven"],
-      "matchPackagePatterns": ["^org\\.springframework\\.boot:.*$"],
+      "matchPackageNames": ["/^org\\.springframework\\.boot:.*$/"],
       "allowedVersions": "<5.0"
     },
     {
       "matchManagers": ["maven"],
-      "matchPackagePatterns": ["^org\\.springdoc:.*$"],
+      "matchPackageNames": ["/^org\\.springdoc:.*$/"],
       "allowedVersions": "<4.0"
     },
     {
       "matchManagers": ["maven"],
-      "matchPackagePatterns": ["com.ninja-squad:springmockk"],
+      "matchPackageNames": ["/com.ninja-squad:springmockk/"],
       "allowedVersions": "<6.0"
     }
   ]

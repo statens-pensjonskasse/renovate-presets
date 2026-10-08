@@ -24,7 +24,7 @@ jobs:
         id: validate
         run: |
           echo "::group::🚚 Pulling Renovate Docker Image"
-          docker pull renovate/renovate:slim
+          docker pull renovate/renovate:latest
           echo "::endgroup::"
           
           echo "## 🔍 Renovate Preset Validation" >> $GITHUB_STEP_SUMMARY
@@ -44,7 +44,7 @@ jobs:
           validated_count=0
           
           for file in $files; do
-            if docker run --rm -v "${{ github.workspace }}:/github/workspace" renovate/renovate:slim \
+            if docker run --rm -v "${{ github.workspace }}:/github/workspace" renovate/renovate:latest \
                renovate-config-validator --strict "/github/workspace/$file"; then
               echo "| \`$file\` | ✅ Valid |" >> $GITHUB_STEP_SUMMARY
               validated_count=$((validated_count + 1))

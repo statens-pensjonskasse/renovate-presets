@@ -1,0 +1,16 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "Oppdater GitHub-hosted runner i runner-tag-input til github-actions-library, slik Renovate gjør for runs-on",
+      "managerFilePatterns": ["/(^|/)\\.github/workflows/[^/]+\\.ya?ml$/"],
+      "matchStrings": [
+        "runner-tag:\\s*['\"]?(?<depName>ubuntu|macos|windows)-(?<currentValue>\\d[\\w.-]*)"
+      ],
+      "datasourceTemplate": "github-runners",
+      "versioningTemplate": "docker",
+      "depTypeTemplate": "github-runner"
+    }
+  ]
+}
