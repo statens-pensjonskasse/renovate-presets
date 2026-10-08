@@ -29,6 +29,18 @@ For Spring-Boot java APIs we recommend only renovating patch versions of spring-
 }
 ```
 
+## GitHub runner i `runner-tag`
+Renovate oppdaterer `runs-on: ubuntu-24.04` automatisk, men ikke `runner-tag`-inputen til github-actions-library.
+`github-runner-tag`-presetet (inkludert i `recommended`, og dermed i alle presetene her) gjør det samme for `runner-tag`:
+
+```yaml
+    with:
+      runner-tag: 'ubuntu-24.04'   # -> 'ubuntu-26.04'
+```
+
+Gjelder GitHub-hostede runnere med versjon (`ubuntu-*`, `macos-*`, `windows-*`) i `.github/workflows/*.y(a)ml`.
+`ubuntu-latest` og egne runnere som `spk-on-prem-arc-runners` røres ikke.
+
 ## Renovate Comments
 For other types of dependencies like github releases or helm charts you can use the `renovate-comments` preset by specifying the file extensions you want to scan for dependencies as follows
 
