@@ -13,9 +13,28 @@
   "npmrc": "@statens-pensjonskasse:registry=https://npm.pkg.github.com/",
   "packageRules": [
     {
-      "matchDatasources": ["npm", "maven"],
-      "matchPackageNames": ["!/^no\\.spk\\./", "!/^@statens-pensjonskasse//"],
+      "description": "Vent 3 dager på nye versjoner fra datakilder som oppgir release-tidspunkt (unntatt egne pakker)",
+      "matchDatasources": [
+        "apk", "aws-machine-image", "bitbucket-tags", "bitrise", "buildpacks-registry", "conda", "cpan", "crate",
+        "dart", "deno", "devbox", "dotnet-version", "elm-package", "endoflife-date", "flutter-version", "galaxy",
+        "galaxy-collection", "github-digest", "github-releases", "github-runners", "github-tags", "gitlab-packages",
+        "gitlab-releases", "gitlab-tags", "go", "golang-version", "gradle-version", "helm", "hex", "hexpm-bob",
+        "jenkins-plugins", "jsr", "maven", "node-version", "npm", "nuget", "orb", "packagist", "puppet-forge", "pypi",
+        "rubygems", "ruby-version", "rust-version", "terraform-module", "terraform-provider", "unity3d"
+      ],
+      "matchPackageNames": ["!/^no\\.spk\\./", "!/^@statens-pensjonskasse//", "!/^statens-pensjonskasse//"],
       "minimumReleaseAge": "3 days"
+    },
+    {
+      "description": "Docker har bare release-tidspunkt på Docker Hub; andre registre (ghcr.io, interne) ville blitt holdt tilbake for alltid",
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["/^((index\\.)?docker\\.io/|[^/.:]+(/|$))/"],
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "description": "Oppdateringstyper uten release-tidspunkt ville blitt holdt tilbake for alltid",
+      "matchUpdateTypes": ["pin", "replacement", "lockFileMaintenance", "bump", "lockfileUpdate", "rollback"],
+      "minimumReleaseAge": null
     }
   ]
 }

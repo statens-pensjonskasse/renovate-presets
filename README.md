@@ -41,6 +41,11 @@ Renovate oppdaterer `runs-on: ubuntu-24.04` automatisk, men ikke `runner-tag`-in
 Gjelder GitHub-hostede runnere med versjon (`ubuntu-*`, `macos-*`, `windows-*`) i `.github/workflows/*.y(a)ml`.
 `ubuntu-latest` og egne runnere som `spk-on-prem-arc-runners` røres ikke.
 
+## Minimum release age
+`recommended` (og dermed alle presetene her) venter 3 dager før nye versjoner foreslås, for alle datakilder der Renovate får release-tidspunkt fra registeret.
+Egne pakker (`no.spk.*`, `@statens-pensjonskasse/*`, `statens-pensjonskasse/*`) unntas.
+For Docker gjelder det bare images fra Docker Hub, siden andre registre (f.eks. ghcr.io) ikke oppgir tidspunkt og oppdateringene da ville blitt holdt tilbake for alltid.
+
 ## Renovate Comments
 For other types of dependencies like github releases or helm charts you can use the `renovate-comments` preset by specifying the file extensions you want to scan for dependencies as follows
 
