@@ -36,5 +36,9 @@
       "matchUpdateTypes": ["pin", "replacement", "lockFileMaintenance", "bump", "lockfileUpdate", "rollback"],
       "minimumReleaseAge": null
     }
-  ]
+  ],
+  "vulnerabilityAlerts": {
+    "description": "Sett label på PR-er som har sikkerhetsoppdateringer",
+    "labels": ["security"]
+  }
 }
