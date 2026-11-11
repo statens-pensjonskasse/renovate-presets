@@ -39,6 +39,6 @@
   ],
   "vulnerabilityAlerts": {
     "description": "Sett label på PR-er som har sikkerhetsoppdateringer",
-    "labels": ["security"]
+    "addLabels": ["security"]
   }
 }
