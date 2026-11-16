@@ -10,7 +10,7 @@
   ],
   "timezone": "UTC",
   "rangeStrategy": "bump",
-  "npmrc": "@statens-pensjonskasse:registry=https://npm.pkg.github.com/",
+  "npmrc": "@statens-pensjonskasse:registry=https://npm.pkg.github.com/\nallow-remote=all",
   "packageRules": [
     {
       "description": "Vent 3 dager på nye versjoner fra datakilder som oppgir release-tidspunkt (unntatt egne pakker)",
