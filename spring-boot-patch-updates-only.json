@@ -1,17 +1,18 @@
 {
+  "description": "Bare patch-oppdateringer av Spring Boot. Gjelder alle artefakter i org.springframework.boot (parent, BOM, plugin, starters), siden de ofte deler versjonsproperty og en minor-oppdatering av én av dem ellers løfter alle.",
   "packageRules": [
     {
-      "matchPackageNames": ["org.springframework.boot:spring-boot-starter-parent", "org.springframework.boot:spring-boot-dependencies"],
+      "matchPackageNames": ["/^org\\.springframework\\.boot(:|$)/"],
       "enabled": true,
       "separateMinorPatch": true
     },
     {
-      "matchPackageNames": ["org.springframework.boot:spring-boot-starter-parent", "org.springframework.boot:spring-boot-dependencies"],
+      "matchPackageNames": ["/^org\\.springframework\\.boot(:|$)/"],
       "matchUpdateTypes": ["major", "minor"],
       "enabled": false
     },
     {
-      "matchPackageNames": ["org.springframework.boot:spring-boot-starter-parent", "org.springframework.boot:spring-boot-dependencies"],
+      "matchPackageNames": ["/^org\\.springframework\\.boot(:|$)/"],
       "matchUpdateTypes": ["patch"],
       "enabled": true,
       "groupName": "spring boot patch"
